@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/focus/focus",
+    "pages/statistics/statistics",
+    "pages/me/me",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "专注",
+        "pagePath": "pages/focus/focus"
+      },
+      {
+        "text": "统计",
+        "pagePath": "pages/statistics/statistics"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/me"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
