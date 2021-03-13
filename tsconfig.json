@@ -18,6 +18,11 @@
     "removeComments": true,
     "pretty": true,
     "strictPropertyInitialization": true,
+    "baseUrl": ".",
+    "types": ["miniprogram-api-typings"],
+    "paths": {
+      "@vant/weapp/*": ["path/to/node_modules/@vant/weapp/dist/*"]
+    },
     "lib": ["es6"],
     "typeRoots": [
       "./typings"

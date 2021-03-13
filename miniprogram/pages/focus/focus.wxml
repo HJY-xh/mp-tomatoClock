@@ -1,2 +1,5 @@
 <!--pages/focus/focus.wxml-->
-<text>pages/focus/focus.wxml</text>
+<view>
+  <text>pages/focus/focus.wxml</text>
+<van-button type="primary">按钮</van-button>
+</view>
