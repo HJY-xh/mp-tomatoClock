@@ -23,10 +23,7 @@
     "paths": {
       "@vant/weapp/*": ["path/to/node_modules/@vant/weapp/dist/*"]
     },
-    "lib": ["es6"],
-    "typeRoots": [
-      "./typings"
-    ]
+    "lib": ["esnext"]
   },
   "include": [
     "./**/*.ts"

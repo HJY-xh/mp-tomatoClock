@@ -1,0 +1,5 @@
+<!--components/missionCard/index.wxml-->
+<view>
+	<!-- <image></image> -->
+	<text>{{item.name}}</text>
+</view>

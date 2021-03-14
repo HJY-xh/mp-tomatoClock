@@ -1,5 +1,7 @@
 <!--pages/focus/focus.wxml-->
 <view>
-  <text>pages/focus/focus.wxml</text>
-<van-button type="primary">按钮</van-button>
+  <text>选择一个事项开始吧</text>
+  <view wx:for="{{typeList}}" wx:key="index">
+    <mission-card item="{{item}}" data-item="{{item}}" bindtap="onMyEvent"/>
+  </view>
 </view>
