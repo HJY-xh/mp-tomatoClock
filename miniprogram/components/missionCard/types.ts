@@ -3,7 +3,6 @@ export enum MissionType {
 	Work,
 	Study,
 	Write,
-	Read,
 	Chat,
 	Motion,
 	Think
@@ -19,7 +18,3 @@ export interface MissionCardItem {
 export interface Props {
 	item: MissionCardItem;
 }
-
-// export interface State {
-// 	a: String;
-// }
