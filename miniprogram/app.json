@@ -14,16 +14,19 @@
   "tabBar": {
     "list": [
       {
-        "text": "专注",
-        "pagePath": "pages/focus/focus"
+        "pagePath": "pages/focus/focus",
+        "iconPath": "assets/tabBar/inactive-focus.png",
+        "selectedIconPath": "assets/tabBar/active-focus.png"
       },
       {
-        "text": "统计",
-        "pagePath": "pages/statistics/statistics"
+        "pagePath": "pages/statistics/statistics",
+        "iconPath": "assets/tabBar/inactive-statistics.png",
+        "selectedIconPath": "assets/tabBar/active-statistics.png"
       },
       {
-        "text": "我的",
-        "pagePath": "pages/me/me"
+        "pagePath": "pages/me/me",
+        "iconPath": "assets/tabBar/inactive-me.png",
+        "selectedIconPath": "assets/tabBar/active-me.png"
       }
     ]
   },
