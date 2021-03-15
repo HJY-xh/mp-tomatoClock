@@ -1,1 +1,10 @@
-/* pages/statistics/statistics.wxss */
+/* components/missionCard/index.wxss */
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.icon {
+	width: 80rpx;
+	height: 80rpx;
+}
