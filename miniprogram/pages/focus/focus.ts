@@ -19,7 +19,7 @@ interface PageData {
 }
 
 interface PageInstance {
-	handleOpenTask: (e: any) => any;
+	handleOpenTask: (e: any) => void;
 }
 
 Page<PageData, PageInstance>({
