@@ -7,7 +7,7 @@ enum MissionType {
 	Think
 }
 
-interface MissionCardItem {
+export interface MissionCardItem {
 	id: Number;
 	iconPath: String;
 	name: String;
@@ -63,8 +63,16 @@ Page<PageData, PageInstance>({
 			}
 		]
 	},
-	handleOpenTask: function(e: any){
+	handleOpenTask: (e: any) => {
 		const taskInfo: MissionCardItem = e.currentTarget.dataset;
-		console.log(taskInfo)
+		wx.setStorage({
+			key: "taskInfo",
+			data: JSON.stringify(taskInfo),
+			success: () => {
+				wx.navigateTo({
+					url: "../task/task",
+				})
+			}
+		})
 	}
 })
