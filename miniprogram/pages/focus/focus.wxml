@@ -3,7 +3,7 @@
   <text>选择一个事项开始吧</text>
   <view class="card-container">
     <view wx:for="{{typeList}}" wx:key="index"  class="card">
-    <mission-card item="{{item}}" data-item="{{item}}" bindtap="onMyEvent"></mission-card>
+    <mission-card item="{{item}}" data-item="{{item}}" bindtap="handleOpenTask"></mission-card>
   </view>
   </view>
 </view>

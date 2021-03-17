@@ -19,7 +19,7 @@ interface PageData {
 }
 
 interface PageInstance {
-	onMyEvent: (e: any) => any;
+	handleOpenTask: (e: any) => any;
 }
 
 Page<PageData, PageInstance>({
@@ -63,8 +63,8 @@ Page<PageData, PageInstance>({
 			}
 		]
 	},
-	onMyEvent: function(e:any){
-		// e.detail // 自定义组件触发事件时提供的detail对象
-		console.log(e)
-	  }
+	handleOpenTask: function(e: any){
+		const taskInfo: MissionCardItem = e.currentTarget.dataset;
+		console.log(taskInfo)
+	}
 })
