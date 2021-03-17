@@ -1,7 +1,9 @@
 <!--pages/focus/focus.wxml-->
-<view>
+<view class="container">
   <text>选择一个事项开始吧</text>
-  <view wx:for="{{typeList}}" wx:key="index">
-    <mission-card item="{{item}}" data-item="{{item}}" bindtap="onMyEvent"/>
+  <view class="card-container">
+    <view wx:for="{{typeList}}" wx:key="index"  class="card">
+    <mission-card item="{{item}}" data-item="{{item}}" bindtap="onMyEvent"></mission-card>
+  </view>
   </view>
 </view>

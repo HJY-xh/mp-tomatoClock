@@ -1,6 +1,7 @@
 /* components/missionCard/index.wxss */
 .container {
-	display: flex;
+	position: relative;
+	display: inline-flex;
 	flex-direction: column;
 }
 

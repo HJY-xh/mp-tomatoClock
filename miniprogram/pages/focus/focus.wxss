@@ -1,1 +1,15 @@
 /* pages/focus/focus.wxss */
+.container {
+	display: flex;
+	flex-direction: column;
+}
+.card-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	padding: 20rpx 40rpx;
+}
+.card {
+	margin: 40rpx 60rpx;
+}
