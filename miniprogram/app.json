@@ -3,7 +3,8 @@
     "pages/focus/focus",
     "pages/statistics/statistics",
     "pages/me/me",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/task/task"
   ],
   "window": {
     "backgroundTextStyle": "light",
