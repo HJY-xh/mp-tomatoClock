@@ -74,5 +74,27 @@ Page<PageData, PageInstance>({
 				})
 			}
 		})
+	},
+	onLoad:async ()=>{
+		wx.login({
+			success (res) {
+				console.log(res,111111111111)
+			  if (res.code) {
+				//发起网络请求
+				wx.request({
+				  url: 'http://127.0.0.1:4000/login',
+				  method: "POST",
+				  data: {
+					code: res.code
+				  },
+				  success(res) {
+					  console.log(res)
+				  }
+				})
+			  } else {
+				console.log('登录失败！' + res.errMsg)
+			  }
+			}
+		  })
 	}
 })
