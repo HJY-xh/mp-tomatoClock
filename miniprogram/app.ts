@@ -2,7 +2,7 @@ import IAppOption from "./interface/IAppOption";
 
 App<IAppOption>({
 	globalData: {
-		text: "Hello,Word!"
+		host: "https://www.xh-hjy.top:4000/"
 	},
 	onLaunch() {
 	}

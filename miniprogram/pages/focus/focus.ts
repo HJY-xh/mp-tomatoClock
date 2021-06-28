@@ -1,3 +1,4 @@
+import { request } from "../../utils/util";
 enum MissionType {
 	Work,
 	Study,
@@ -78,18 +79,16 @@ Page<PageData, PageInstance>({
 	onLoad:async ()=>{
 		wx.login({
 			success (res) {
-				console.log(res,111111111111)
 			  if (res.code) {
 				//发起网络请求
-				wx.request({
-				  url: 'http://127.0.0.1:4000/login',
+				request({
+				  url: 'login',
 				  method: "POST",
 				  data: {
 					code: res.code
-				  },
-				  success(res) {
-					  console.log(res)
 				  }
+				}).then((res: any) => {
+					wx.setStorageSync("token", res.data.token);
 				})
 			  } else {
 				console.log('登录失败！' + res.errMsg)
